@@ -1,6 +1,4 @@
 from utils import rolar_dado, exibir_status, clear_terminal
-from tabuleiro import Tabuleiro
-from jogador import GerenciadorDeJogadores
 
 class Partida:
     def __init__(self, tabuleiro, gerenciador_jogadores, max_rodadas):
