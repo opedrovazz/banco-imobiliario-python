@@ -44,12 +44,12 @@ class Partida:
                 return
 
             for jogador in jogadores_ativos:
-                clear_terminal()
                 if jogador.rodadas_preso > 0:
+                    clear_terminal()
                     print(f"{jogador.nome} está preso. Rodadas restantes: {jogador.rodadas_preso}.")
                     jogador.rodadas_preso -= 1
                     continue
-
+                else: clear_terminal()
                 self.turno_jogador(jogador)
 
             self.turno_atual += 1
